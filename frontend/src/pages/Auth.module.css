@@ -1,0 +1,112 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.gridLine {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: rgba(0, 255, 136, 0.03);
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+  padding: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.logoMark {
+  width: 48px;
+  height: 48px;
+  background: var(--green);
+  color: var(--bg);
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  margin: 0 auto 14px;
+  box-shadow: 0 0 40px var(--green-glow);
+}
+
+.title {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-bright);
+  letter-spacing: 0.02em;
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 4px;
+  letter-spacing: 0.06em;
+}
+
+.terminal {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.termBar {
+  background: var(--bg-2);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.termBar span {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.termBar span:nth-child(1) { background: var(--red); opacity: 0.6; }
+.termBar span:nth-child(2) { background: var(--amber); opacity: 0.6; }
+.termBar span:nth-child(3) { background: var(--green); opacity: 0.6; }
+
+.termTitle {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.foot {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-dim);
+}

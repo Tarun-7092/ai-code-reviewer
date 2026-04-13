@@ -1,0 +1,55 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+
+.loader { display: flex; align-items: center; justify-content: center; min-height: 300px; }
+
+.pageHead {
+  display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.heading { font-family: var(--display); font-size: 22px; font-weight: 800; color: var(--text-bright); }
+.subheading { font-size: 12px; color: var(--text-dim); margin-top: 4px; letter-spacing: 0.04em; }
+
+.newBtn {
+  padding: 9px 18px; background: var(--green); color: var(--bg);
+  border: none; border-radius: var(--radius); font-family: var(--mono);
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  transition: all 0.15s;
+}
+.newBtn:hover { background: var(--green-dim); box-shadow: 0 0 20px var(--green-glow); }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.chartsRow { display: flex; gap: 16px; flex-wrap: wrap; }
+.chartsRow > * { min-width: 250px; }
+
+.bottomRow { display: flex; gap: 16px; flex-wrap: wrap; }
+.bottomRow > * { min-width: 250px; }
+
+.reviewList { display: flex; flex-direction: column; gap: 2px; }
+.reviewRow {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 12px; border-radius: var(--radius);
+  cursor: pointer; transition: background 0.15s;
+}
+.reviewRow:hover { background: var(--bg-2); }
+
+.reviewInfo { flex: 1; min-width: 0; }
+.reviewFile { font-size: 13px; color: var(--text-bright); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reviewMeta { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+
+.reviewDate { font-size: 11px; color: var(--text-dim); white-space: nowrap; }
+
+.issueList { display: flex; flex-direction: column; gap: 12px; }
+.issueCat {}
+.issueCatBar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; }
+.issueCatName { font-size: 12px; letter-spacing: 0.06em; text-transform: capitalize; }
+.issueBarWrap { height: 4px; background: var(--bg-3); border-radius: 2px; overflow: hidden; margin-bottom: 3px; }
+.issueBarFill { height: 100%; border-radius: 2px; transition: width 0.6s ease; }
+.issueCatCount { font-size: 11px; color: var(--text-dim); }
+
+.empty { font-size: 13px; color: var(--text-dim); padding: 20px 0; text-align: center; }
+.linkBtn { background: none; border: none; color: var(--green); font-family: var(--mono); font-size: 12px; cursor: pointer; padding: 0; }
+.linkBtn:hover { text-decoration: underline; }

@@ -1,0 +1,53 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.header {}
+.heading { font-family: var(--display); font-size: 22px; font-weight: 800; color: var(--text-bright); }
+.sub { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+
+.layout { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+
+.userCard {
+  width: 220px;
+  min-width: 200px;
+  text-align: center;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 72px; height: 72px;
+  background: var(--green-glow);
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  box-shadow: 0 0 20px var(--green-glow);
+}
+
+.userName { font-family: var(--display); font-size: 16px; font-weight: 700; color: var(--text-bright); }
+.userEmail { font-size: 11px; color: var(--text-dim); word-break: break-all; }
+
+.userStats {
+  display: flex; align-items: center; gap: 14px;
+  margin-top: 10px; padding-top: 14px;
+  border-top: 1px solid var(--border); width: 100%;
+  justify-content: center;
+}
+.userStat { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.statNum { font-family: var(--display); font-size: 18px; font-weight: 700; color: var(--text-bright); }
+.statLbl { font-size: 10px; color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; }
+.userStatDivider { width: 1px; height: 32px; background: var(--border); }
+
+.memberSince { font-size: 10px; color: var(--text-dim); letter-spacing: 0.06em; margin-top: 4px; }
+
+.forms { flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 16px; }
+.form { display: flex; flex-direction: column; gap: 14px; }
+.formNote { font-size: 11px; color: var(--text-dim); margin-top: -6px; }

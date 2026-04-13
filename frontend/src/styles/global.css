@@ -1,0 +1,88 @@
+:root {
+  --bg: #080b0f;
+  --bg-1: #0d1117;
+  --bg-2: #111820;
+  --bg-3: #19222e;
+  --border: rgba(0, 255, 136, 0.12);
+  --border-bright: rgba(0, 255, 136, 0.35);
+  --green: #00ff88;
+  --green-dim: #00c86a;
+  --green-glow: rgba(0, 255, 136, 0.15);
+  --amber: #ffb347;
+  --red: #ff4d6a;
+  --red-dim: rgba(255, 77, 106, 0.15);
+  --blue: #4da6ff;
+  --text: #c8d8e8;
+  --text-dim: #6a8099;
+  --text-bright: #e8f4ff;
+  --mono: "JetBrains Mono", monospace;
+  --display: "Syne", sans-serif;
+  --radius: 4px;
+  --radius-lg: 8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 15px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scanline texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+input, textarea, select, button { font-family: var(--mono); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-1); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+
+/* Utility */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; } 50% { opacity: 0; }
+}
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 var(--green-glow); }
+  50%       { box-shadow: 0 0 0 8px transparent; }
+}
+@keyframes scan {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(100vh); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.fade-in { animation: fadeIn 0.4s ease both; }
+.fade-in-1 { animation: fadeIn 0.4s 0.1s ease both; }
+.fade-in-2 { animation: fadeIn 0.4s 0.2s ease both; }
+.fade-in-3 { animation: fadeIn 0.4s 0.3s ease both; }
+.fade-in-4 { animation: fadeIn 0.4s 0.4s ease both; }

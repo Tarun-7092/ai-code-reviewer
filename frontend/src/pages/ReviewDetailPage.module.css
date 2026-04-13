@@ -1,0 +1,76 @@
+.page { display: flex; flex-direction: column; gap: 18px; }
+.loader { display: flex; justify-content: center; padding: 80px; }
+
+.backBtn {
+  background: none; border: none; color: var(--text-dim); font-family: var(--mono);
+  font-size: 12px; cursor: pointer; padding: 0; width: fit-content;
+  transition: color 0.15s;
+}
+.backBtn:hover { color: var(--green); }
+
+.header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.headerLeft { display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap; }
+.fileName { font-family: var(--display); font-size: 20px; font-weight: 700; color: var(--text-bright); word-break: break-all; margin-bottom: 8px; }
+.headerBadges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.reviewedAt { font-size: 11px; color: var(--text-dim); letter-spacing: 0.04em; }
+.headerActions { display: flex; gap: 8px; }
+
+.twoCol { display: flex; gap: 16px; flex-wrap: wrap; }
+.twoCol > * { min-width: 240px; }
+
+.summaryText { font-size: 13px; color: var(--text); line-height: 1.7; }
+.positives { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+.posTitle { font-size: 11px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 10px; }
+.positiveItem { display: flex; gap: 8px; font-size: 12px; color: var(--text); margin-bottom: 6px; }
+.check { color: var(--green); flex-shrink: 0; }
+
+.dimList { display: flex; flex-direction: column; gap: 10px; }
+.dimItem { display: flex; align-items: center; gap: 10px; }
+.dimLabel { font-size: 11px; color: var(--text-dim); width: 100px; flex-shrink: 0; letter-spacing: 0.04em; }
+.dimBarWrap { flex: 1; height: 4px; background: var(--bg-3); border-radius: 2px; overflow: hidden; }
+.dimBarFill { height: 100%; border-radius: 2px; transition: width 0.5s ease; }
+.dimVal { font-size: 12px; font-family: var(--display); font-weight: 700; width: 28px; text-align: right; }
+
+.issueStats { display: flex; gap: 14px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.issueStat { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-dim); }
+.critDot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+.warnDot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+.suggDot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
+
+.tagsCard {}
+.tagRow { display: flex; gap: 8px; }
+.tagInput {
+  flex: 1; background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 8px 12px; color: var(--text); font-family: var(--mono); font-size: 13px; outline: none;
+}
+.tagInput:focus { border-color: var(--green); }
+
+.tabs { display: flex; gap: 2px; background: var(--bg-1); border: 1px solid var(--border); border-radius: var(--radius); padding: 4px; margin-bottom: 12px; }
+.tab {
+  flex: 1; padding: 7px 10px; background: transparent; border: none;
+  border-radius: var(--radius); color: var(--text-dim); font-family: var(--mono);
+  font-size: 12px; cursor: pointer; transition: all 0.15s; letter-spacing: 0.04em;
+}
+.tab:hover { color: var(--text); background: var(--bg-2); }
+.tabActive { background: var(--bg-2) !important; color: var(--green) !important; }
+
+.issuesList { display: flex; flex-direction: column; gap: 10px; }
+.issueCard { padding: 14px 16px; }
+.issueTop { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+.lineTag { font-size: 10px; color: var(--text-dim); letter-spacing: 0.06em; margin-left: auto; }
+.issueTitle { font-size: 13px; font-weight: 600; color: var(--text-bright); margin-bottom: 6px; }
+.issueDesc { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+.codeCtx {
+  margin-top: 8px; background: var(--bg-3); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 8px 12px; font-size: 11px; color: var(--red);
+  overflow-x: auto; white-space: pre-wrap; word-break: break-word;
+}
+.suggestion { margin-top: 8px; font-size: 12px; color: var(--green); }
+.fixLabel { font-weight: 600; }
+.noIssues { text-align: center; padding: 28px; color: var(--green); font-size: 13px; }
+
+.codePreview {
+  background: var(--bg-2); border-radius: var(--radius); padding: 16px;
+  font-size: 12px; overflow-x: auto; color: var(--text); line-height: 1.6;
+  white-space: pre-wrap; word-break: break-word; max-height: 500px; overflow-y: auto;
+}
