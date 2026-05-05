@@ -35,6 +35,38 @@ codescan/
 
 ---
 
+## 🌐 Live Deployment
+
+| Service | Link |
+|----------|------|
+| Frontend App | https://ai-code-reviewer-pi-tawny.vercel.app/ |
+| Backend API | https://ai-code-reviewer-6ulv.onrender.com |
+| GitHub Repository | https://github.com/Tarun-7092/ai-code-reviewer |
+
+> **Note:**  
+> Backend services are hosted on Render free tier and may take 30–60 seconds to wake up on the first request.  
+> You can also manually activate the backend by opening the Backend API link before using the application.
+
+---
+
+## 🖼️ Screenshots
+
+### Dashboard
+![AI Reviewer](./assets/ai-review-dashboard.png)
+
+### AI Reviewer
+![AI Reviewer](./assets/ai-reviewer.png)
+
+
+---
+
+## 🎥 GIF Previews
+
+### AI Reviewer Demo
+![AI Reviewer GIF](./assets/ai-reviewer-demo.gif)
+
+---
+
 ## Backend
 
 ### Tech Stack
