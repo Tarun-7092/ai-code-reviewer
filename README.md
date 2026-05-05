@@ -63,7 +63,7 @@ codescan/
 ## 🎥 GIF Previews
 
 ### AI Reviewer Demo
-![AI Reviewer GIF](./assets/ai-reviewer-demo.gif)
+![AI Reviewer GIF](./assets/ai-review-demo.gif)
 
 ---
 
