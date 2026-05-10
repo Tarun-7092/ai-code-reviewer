@@ -38,7 +38,7 @@ export default function LoginPage() {
       <div className={styles.box + " fade-in"}>
         <div className={styles.header}>
           <div className={styles.logoMark}>CS</div>
-          <h1 className={styles.title}>CodeScan</h1>
+          <h1 className={styles.title}>NeuralReview</h1>
           <p className={styles.sub}>AI-powered code review</p>
         </div>
 
