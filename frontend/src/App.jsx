@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { AuthProvider } from "./context/AuthContext";
 import Layout from "./components/layout/Layout";
 
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="profile" element={<ProfilePage />} />
           </Route>
         </Routes>
+        <Analytics />
       </BrowserRouter>
     </AuthProvider>
   );
