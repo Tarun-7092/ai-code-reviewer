@@ -39,7 +39,7 @@ export default function RegisterPage() {
       <div className={styles.box + " fade-in"}>
         <div className={styles.header}>
           <div className={styles.logoMark}>CS</div>
-          <h1 className={styles.title}>NeuralReview</h1>
+          <h1 className={styles.title}>CodeScan</h1>
           <p className={styles.sub}>Create your account</p>
         </div>
 
