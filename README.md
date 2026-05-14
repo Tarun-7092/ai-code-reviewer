@@ -39,7 +39,7 @@ codescan/
 
 | Service | Link |
 |----------|------|
-| Frontend App | https://ai-code-reviewer-pi-tawny.vercel.app/ |
+| Frontend App | https://getcodescan.vercel.app |
 | Backend API | https://ai-code-reviewer-6ulv.onrender.com |
 | GitHub Repository | https://github.com/Tarun-7092/ai-code-reviewer |
 
